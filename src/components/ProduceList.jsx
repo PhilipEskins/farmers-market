@@ -2,9 +2,15 @@ import React from 'react';
 import MonthlyProduce from './MonthlyProduce';
 import availableProduce from '../modelData/ProduceData';
 
+const gridLayout = {
+  display: 'grid',
+  // gridTemplateRows: "repeat(4, 1fr)",
+  gridTemplateColumns: "repeat(3, 1fr)"
+}
+
 function ProduceList() {
   return(
-    <div>
+    <div style={gridLayout}>
       {availableProduce.map((item, index) =>
         <MonthlyProduce month = {item.month}
           selection = {item.selection}

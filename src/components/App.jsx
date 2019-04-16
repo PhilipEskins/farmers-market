@@ -7,15 +7,17 @@ function App() {
   const gridStyle = {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    flexWrap: 'wrap',
+    width: '100%'
   };
+
   return(
     <div>
       <Navbar/>
-      <div style={gridStyle}>
+      <div>
         <Locations/>
-        <ProduceList/>
       </div>
+      <ProduceList/>
     </div>
   );
 

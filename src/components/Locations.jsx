@@ -3,8 +3,13 @@ import MarketSpot from './MarketSpot';
 import marketSchedule from '../modelData/LocationData';
 
 function Locations() {
+  const maxWidth = {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap'
+  };
   return(
-    <div>
+    <div style={maxWidth}>
       {marketSchedule.map((spot, index) =>
         <MarketSpot day = {spot.day}
           location = {spot.location}

@@ -10,12 +10,13 @@ function MarketSpot(props) {
     padding: '10px 20px',
     textAlign: 'center'
   };
+
   return(
-    <div>
+    <div style={{width:'33%'}}>
       <h1 style = {dayWeek}>{props.day}</h1>
-      <h4 style={textStyle}>{props.location}</h4>
-      <h4 style={textStyle}>{props.hours}</h4>
-      <h4 style={textStyle}>{props.booth}</h4>
+      <h4 style={textStyle}>Location: {props.location}</h4>
+      <h4 style={textStyle}>Hours: {props.hours}</h4>
+      <h4 style={textStyle}>Station: {props.booth}</h4>
       <br></br>
     </div>
   );
