@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 function MonthlyProduce(props) {
+  const textStyle = {
+    fontFamily: 'sans-serif'
+  };
   return(
     <div>
-      <h3>{props.month}</h3>
-      <h4>{props.selection}</h4>
+      <h1>{props.month}</h1>
+      <h4 style={textStyle}>
+        {
+          props.selection.map((produce, index) => {
+            return <p key={index}>{produce}</p>;
+          })
+        }
+      </h4>
     </div>
 
   );
@@ -13,6 +23,6 @@ function MonthlyProduce(props) {
 
 MonthlyProduce.propTypes = {
   month: PropTypes.string,
-  selection: PropTypes.array
+  selection: PropTypes.string
 };
 export default MonthlyProduce;

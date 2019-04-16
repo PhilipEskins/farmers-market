@@ -1,6 +1,7 @@
 import React from 'react';
 import Locations from './Locations';
 import ProduceList from './ProduceList';
+import Navbar from './Navbar';
 
 function App() {
   const gridStyle = {
@@ -8,12 +9,9 @@ function App() {
     flexDirection: 'row',
     justifyContent: 'space-around'
   };
-  const center = {
-    textAlign: 'center'
-  };
   return(
     <div>
-      <h1 style={center}>Avery's Organics</h1>
+      <Navbar/>
       <div style={gridStyle}>
         <Locations/>
         <ProduceList/>
