@@ -73,7 +73,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'app-react-root',
-      title: 'Social Media',
+      title: 'Farmers Market',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
