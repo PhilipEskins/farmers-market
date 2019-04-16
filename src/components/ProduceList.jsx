@@ -277,7 +277,7 @@ function ProduceList() {
         <MonthlyProduce month = {item.month}
           selection = {item.selection.map((produce, index)=>
             <MonthlyProduce selection = {produce}
-                            key = {index}/>)}
+              key = {index}/>)}
           key = {index}/>
       )}
     </div>

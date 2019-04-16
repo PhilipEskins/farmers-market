@@ -5,7 +5,7 @@ function MonthlyProduce(props) {
   return(
     <div>
       <h3>{props.month}</h3>
-      <h3>{props.selection}</h3>
+      <h4>{props.selection}</h4>
     </div>
 
   );
