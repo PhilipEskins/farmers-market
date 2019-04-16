@@ -4,13 +4,6 @@ import ProduceList from './ProduceList';
 import Navbar from './Navbar';
 
 function App() {
-  const gridStyle = {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    width: '100%'
-  };
-
   return(
     <div>
       <Navbar/>

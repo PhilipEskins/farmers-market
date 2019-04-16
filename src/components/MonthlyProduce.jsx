@@ -4,18 +4,23 @@ import PropTypes from 'prop-types';
 
 function MonthlyProduce(props) {
   const textStyle = {
-    fontFamily: 'sans-serif'
+    fontFamily: 'sans-serif',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 1fr'
+  };
+  const produceStyle = {
+    border: '1px solid blue'
   };
   return(
-    <div>
-      <h1>{props.month}</h1>
-      <h4 style={textStyle}>
+    <div style={produceStyle}>
+      <h1 style={{textAlign:'center'}}>{props.month}</h1>
+      <div style={textStyle}>
         {
           props.selection.map((produce, index) => {
             return <p key={index}>{produce}</p>;
           })
         }
-      </h4>
+      </div>
     </div>
 
   );
