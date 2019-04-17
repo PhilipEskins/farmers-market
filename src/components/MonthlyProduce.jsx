@@ -16,6 +16,7 @@ function MonthlyProduce(props) {
   if (props.currentMonth === props.month) {
     produceStyle.backgroundColor = 'red';
   }
+  
   return(
     <div style={produceStyle}>
       <h1 style={{textAlign:'center'}}>{props.month}</h1>
