@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
-  
+
   return(
     <div>
       <style jsx>{`
@@ -17,6 +18,7 @@ function Navbar() {
         `}
       </style>
       <h1>Avery's Marketplace!</h1>
+      <Link to='/'>Home</Link> | <Link to='/produce'>Produce</Link>
     </div>
   );
 }
