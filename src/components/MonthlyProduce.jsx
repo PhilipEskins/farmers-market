@@ -6,11 +6,16 @@ function MonthlyProduce(props) {
   const textStyle = {
     fontFamily: 'sans-serif',
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr'
+    gridTemplateColumns: '1fr 1fr 1fr',
+    marginLeft: '2%'
   };
   const produceStyle = {
     border: '1px solid blue'
   };
+
+  if (props.currentMonth === props.month) {
+    produceStyle.backgroundColor = 'red';
+  }
   return(
     <div style={produceStyle}>
       <h1 style={{textAlign:'center'}}>{props.month}</h1>
@@ -28,6 +33,7 @@ function MonthlyProduce(props) {
 
 MonthlyProduce.propTypes = {
   month: PropTypes.string,
-  selection: PropTypes.string
+  currentMonth: PropTypes.string,
+  selection: PropTypes.array
 };
 export default MonthlyProduce;

@@ -7,9 +7,7 @@ function App() {
   return(
     <div>
       <Navbar/>
-      <div>
-        <Locations/>
-      </div>
+      <Locations/>
       <ProduceList/>
     </div>
   );

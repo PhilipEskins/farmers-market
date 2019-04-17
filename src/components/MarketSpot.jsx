@@ -11,6 +11,11 @@ function MarketSpot(props) {
     textAlign: 'center'
   };
 
+  if (props.day === props.currentDay) {
+    dayWeek.backgroundColor = 'red';
+    
+  }
+
   return(
     <div style={{width:'33%'}}>
       <h1 style = {dayWeek}>{props.day}</h1>
@@ -25,6 +30,7 @@ function MarketSpot(props) {
 MarketSpot.propTypes = {
   day: PropTypes.string,
   location: PropTypes.string,
+  currentDay: PropTypes.string,
   hours: PropTypes.string,
   booth: PropTypes.string,
 };
